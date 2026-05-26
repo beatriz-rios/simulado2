@@ -1,0 +1,18 @@
+# Análise de Requisitos - Gestão Mundo Pet
+
+Esta é a documentação simplificada e concisa de requisitos funcionais (RF) e não funcionais (RNF) do sistema, também disponível de forma detalhada no arquivo "documentacao_requisitos.md".
+
+## Requisitos Funcionais (RF)
+- RF-001: Autenticação de Administrador (Login fixo: Admin / 456).
+- RF-002: Proteção de Sessão nas páginas administrativas.
+- RF-003: Cadastro, Edição e Exclusão de Produtos Pet.
+- RF-004: Cadastro, Edição e Exclusão de Medicamentos Pet.
+- RF-005: Lançamento de Movimentação de Estoque (Entradas e Saídas) para Produtos Pet.
+- RF-006: Lançamento de Movimentação de Estoque (Entradas e Saídas) para Medicamentos.
+- RF-007: Exibição dinâmica de saldo em estoque (soma de movimentações) no Painel de Gestão.
+
+## Requisitos Não Funcionais (RNF)
+- RNF-001: Backend desenvolvido em PHP Estruturado.
+- RNF-002: Banco de dados relacional utilizando MySQL.
+- RNF-003: Autenticação baseada em $_SESSION do PHP.
+- RNF-004: Interface simples e direta baseada em HTML e navegação via hiperlinks.
