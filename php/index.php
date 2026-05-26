@@ -5,7 +5,7 @@ if ($_POST) {
   $use = $_POST['use'];
   $sn = $_POST['sn'];
 
-  if ($use == "Admin" || $use == "Bia" || $use == "kaua" && $sn == "123") {
+  if ($use == "Admin" || $use == "Bia" || $use == "prof" && $sn == "123") {
     $_SESSION['usuario'] = $use;
     header("location: menu.php");
   } else {
