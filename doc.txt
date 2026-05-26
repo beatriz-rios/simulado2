@@ -3,7 +3,7 @@
 Esta é a documentação simplificada e concisa de requisitos funcionais (RF) e não funcionais (RNF) do sistema, também disponível de forma detalhada no arquivo "documentacao_requisitos.md".
 
 ## Requisitos Funcionais (RF)
-- RF-001: Autenticação de Administrador (Login fixo: Admin / 456).
+- RF-001: Autenticação de Administrador (Login fixo de três usuários: admin ou bia ou prof. Com senha única: 123).
 - RF-002: Proteção de Sessão nas páginas administrativas.
 - RF-003: Cadastro, Edição e Exclusão de Produtos Pet.
 - RF-004: Cadastro, Edição e Exclusão de Medicamentos Pet.
