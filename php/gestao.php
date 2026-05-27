@@ -33,7 +33,8 @@
  c.categoria,
  SUM(m.quant) as estoque_total
  FROM produtpet c
- INNER JOIN movprodut m ON c.idprodutpet = m.produtpet_idprodutpet
+ INNER JOIN movprodut m
+ON c.idprodutpet = m.produtpet_idprodutpet
  WHERE c.idprodutpet
  GROUP BY c.idprodutpet, c.nome, c.codigo,
  c.fabricante,
@@ -42,7 +43,8 @@
  c.pesoembalagem,
  c.indicacaoespecie,
  c.sabor,
- c.categoria";
+ c.categoria
+ORDER BY c.nome ASC;";
 
     $servername = "localhost"; // geralmente é localhost/ 127.0.01:3308(no pc do senai)  mas se estiver usando uma porta diferente, especifique-a
     $username = "root"; // nome de usuário do banco de dados
@@ -97,14 +99,16 @@
  c.instrucoesuso,
  SUM(m.quant) as estoque_total
  FROM remedio c
- INNER JOIN movremed m ON c.idremedio = m.remedio_idremedio
+ INNER JOIN movremed m 
+ ON c.idremedio = m.remedio_idremedio
  WHERE c.idremedio
  GROUP BY  c.idremedio,
  c.nome_remedio,
  c.validade,
  c.pesoliquido,
  c.indicacaoterapeutica,
- c.instrucoesuso";
+ c.instrucoesuso
+ ORDER BY c.nome_remedio ASC;";
 
     $servername = "localhost"; // geralmente é localhost/ 127.0.01:3308(no pc do senai)  mas se estiver usando uma porta diferente, especifique-a
     $username = "root"; // nome de usuário do banco de dados
